@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da memoria</title>
+  
+  <link rel="stylesheet" href="src/style/style.css">
+  <link rel="shortcut icon" href="src/img/favicon-dbz.ico">
+</head>
+
+<body>
+  <main>
+    <header data-js="header">
+      <h1 class="title-principal">Dragon Ball Z Memory Game</h1>
+      <h2>Teste a sua memória e se divirta! :)</h2>
+    </header>
+    <section data-js="section-menu" class="container-menu">
+      <div class="div-iniciar">
+        <button data-js="iniciarJogo">Iniciar</button>
+      </div>
+      <div class="div-dificuldade">
+        <h3 for="dificuldade" class="dificuldade-h3">Dificuldade:</h3>
+        <select data-js="dificuldade" name="dificuldade" class="dificuldade">
+          <option value="facil">Fácil</option>
+          <option value="normal">Normal</option>
+          <option value="dificil">Difícil</option>
+        </select>
+      </div>
+    </section>
+    <div class="acertos hidden" data-js="placar-acertos">
+      <h2 data-js="placar">Ainda não acertou nenhum :(</h2>
+    </div>
+    <footer data-js="footer">
+      <p>Feito por leonardo | Github:</p>
+      <a href="https://github.com/Marshalldt1/jogo-da-memoria" target="_blank"><img src="src/img/github.png" width="20px" alt=""></a>
+    </footer>
+    <section class="container-card"></section>
+
+  </main>
+  <div data-js="modal-score" class="modal-score hidden">
+    <div class="modal-container">
+      <h1>PARABÉNS</h1>
+      <h2 data-js="mensagem-pontos">Você conseguiu zerar o jogo!!</h2>
+      <div class="modal-img"><img src="src/img/goku-modal.gif" width="300px" alt="goku"></div>
+      <div>
+        <button data-js="voltar-ao-menu-botao" class="modal-button">Tela Inicial</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="src/script/app.js"></script>
+</body>
+
+</html>
